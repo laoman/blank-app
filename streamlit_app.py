@@ -5,7 +5,7 @@ import time
 st.set_page_config(page_title="Pro App", layout="wide")
 
 # This simulates a slow global data load (Only happens once due to cache)
-@st.cache_data
+#@st.cache_data
 def get_heavy_data():
     time.sleep(20) # Simulated delay
     return {"status": "Ready"}
