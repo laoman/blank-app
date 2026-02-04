@@ -18,7 +18,7 @@ st.title(f"Multi-Tab Dashboard ({data_status['status']})")
 @st.fragment
 def render_tab_content(tab_name, color):
     st.subheader(f"Content for {tab_name}")
-    
+    get_heavy_data()
     # Interaction here ONLY reruns this specific function
     col1, col2 = st.columns(2)
     with col1:
